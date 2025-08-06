@@ -129,7 +129,7 @@ assign HEX6 = display_right_bus[ 22: 16];
 assign HEX7 = display_right_bus[ 30: 24];
 
 // Output - Leds
-assign LEDR = leds_red_bus		[ 17: 0];
+assign LEDR = leds_red_bus	  [ 17: 0];
 assign LEDG = leds_green_bus  [ 8: 0]; 
 
 // Input - Buttons

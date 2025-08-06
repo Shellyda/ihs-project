@@ -250,11 +250,11 @@ static long int my_ioctl(struct file*, unsigned int cmd, unsigned long arg)
 		break;
 	case WR_RED_LEDS:
 		write_pointer = bar0_mmio + 0xC040; //TODO: update offset
-		wr_name_idx = IDX_DISPLAYR;
+		wr_name_idx = IDX_REDLED; // CHANGED TO RED LED IDX
 		break;
 	case WR_GREEN_LEDS:
 		write_pointer = bar0_mmio + 0xC060; //TODO: update offset
-		wr_name_idx = IDX_DISPLAYR;
+		wr_name_idx = IDX_GREENLED; // CHANGED TO GREEN LED IDX
 		break;
 	default:
 		printk("my_driver: unknown ioctl command: 0x%X\n", cmd);
