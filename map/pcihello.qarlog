@@ -1,0 +1,119 @@
+Quartus Prime Archive log --	C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.qarlog
+
+Archive:	C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.qar
+Date:		Mon Jun 17 18:39:40 2024
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_pci_express.sdc
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_reset_controller.sdc
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.SDC
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.cmp
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.qpf
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.qsf
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.sdc
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihello_assignment_defaults.qdf
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore.cmp
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore.qsys
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore.sopcinfo
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore.bsf
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore.cmp
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore.html
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore.xml
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore_bb.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore_generation.rpt
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore_generation_previous.rpt
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore_inst.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/pcihellocore_inst.vhd
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/pcihellocore.debuginfo
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/pcihellocore.qip
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/pcihellocore.regmap
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/pcihellocore.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_sc_fifo.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_clock_crosser.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_pipeline_base.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_default_burst_converter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_incr_burst_converter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_irq_clock_crosser.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_address_alignment.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_arbitrator.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_adapter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_adapter_new.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_master_agent.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_master_translator.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_reorder_memory.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_slave_agent.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_slave_translator.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_traffic_limiter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_width_adapter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_pci_express.sdc
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_pcie_hard_ip_reset_controller.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_reset_controller.sdc
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_reset_controller.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_reset_synchronizer.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_wrap_burst_converter.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_hip_pipen1b_qsys.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_pcie_reconfig_bridge.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_pipe_interface.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_pll_100_250.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_pll_125_250.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpcie_rs_serdes.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_clksync.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_lite_app.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_a2p_addrtrans.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_a2p_fixtrans.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_a2p_vartrans.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_app.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_cfg_status.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_control_register.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_cr_avalon.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_cr_interrupt.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_cr_mailbox.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_p2a_addrtrans.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_reg_fifo.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_rx.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_rx_cntrl.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_rx_resp.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_tx.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_tx_cntrl.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_txavl_cntrl.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altpciexpav_stif_txresp_cntrl.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_addr_router.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_cmd_xbar_demux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_hexport.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_id_router.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_id_router_003.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_inport.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_irq_mapper.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_avalon_st_adapter.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_avalon_st_adapter_003.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_avalon_st_adapter_003_error_adapter_0.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_cmd_demux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_cmd_mux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_router.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_router_001.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_router_004.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_rsp_demux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_mm_interconnect_0_rsp_mux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_pcie_hard_ip_0.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_pcie_hard_ip_0_altgx_internal.v
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_rsp_xbar_demux.sv
+C:/Users/teteu/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/pcihellocore_rsp_xbar_mux.sv
+	======= Total: 102 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Aug 07 15:19:52 2025
+Source archive file:	D:/Users/sfsb2/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello.qar
+Archive was extracted into	D:/Users/sfsb2/Downloads/mapeamento-0.2-alunos/mapeamento/pcihello_restored/
+		 - successfully.

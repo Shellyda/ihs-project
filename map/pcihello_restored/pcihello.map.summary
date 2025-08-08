@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Thu Aug 07 15:50:30 2025
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : pcihello
+Top-level Entity Name : pcihello
+Family : Cyclone IV GX
+Total logic elements : 6,771
+    Total combinational functions : 5,293
+    Dedicated logic registers : 3,830
+Total registers : 3830
+Total pins : 116
+Total virtual pins : 0
+Total memory bits : 54,656
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 1
+Total GXB Receiver Channel PMA : 1
+Total GXB Transmitter Channel PCS : 1
+Total GXB Transmitter Channel PMA : 1
+Total PLLs : 1
