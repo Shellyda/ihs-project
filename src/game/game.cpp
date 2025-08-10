@@ -12,7 +12,7 @@ void InitGame(int fd)
     InitMap();
     InitPlayer();
 
-    // music = LoadMusicStream("assets/sounds/overworld.mp3");
+    music = LoadMusicStream("assets/sounds/overworld.mp3");
     PlayMusicStream(music);
 }
 
@@ -25,7 +25,7 @@ void UpdateGame(int fd)
     {
         inBattle = 1;
         StopMusicStream(music);
-        // music = LoadMusicStream("assets/sounds/battle.mp3");
+        music = LoadMusicStream("assets/sounds/battle.mp3");
         PlayMusicStream(music);
     }
 }
