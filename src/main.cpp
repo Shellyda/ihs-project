@@ -7,6 +7,79 @@
 #include <errno.h>
 #include "ioctl_cmds.h"
 
+bool waitUser(int fd)
+{
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+        ClearBackground(BLACK);
+        DrawText("PokeCIn", 300, 200, 40, WHITE);
+        DrawText("Press ENTER to start", 200, 300, 20, WHITE);
+        EndDrawing();
+
+        unsigned long int data = 0x0; // LOW ON / HIGH OFF
+
+        ioctl(fd, WR_L_DISPLAY);
+        write(fd, &data, sizeof(data));
+
+        int key = 0;
+        ioctl(fd, RD_SWITCHES);
+        read(fd, &key, 1); // 1 byte -> 8 bits -> 8 switches
+
+        // SWITCH - INPUT
+        if (IsKeyPressed(KEY_ENTER) || key > 0)
+            return true;
+
+        // SHOW DISPLAY AND LEDS
+
+        unsigned int data = 0x0;
+        ioctl(fd, WR_GREEN_LEDS);
+        write(fd, &data, sizeof(data));
+
+        sleep(1);
+
+        data = 0xFFFFFFFF;
+        ioctl(fd, WR_GREEN_LEDS);
+        write(fd, &data, sizeof(data));
+        sleep(1);
+
+        data = 0x0;
+        ioctl(fd, WR_GREEN_LEDS);
+        write(fd, &data, sizeof(data));
+
+        data = 0xFFFFFFFF;
+        ioctl(fd, WR_RED_LEDS);
+        write(fd, &data, sizeof(data));
+
+        sleep(1);
+
+        data = 0x0;
+        ioctl(fd, WR_RED_LEDS);
+        write(fd, &data, sizeof(data));
+
+        data = 0x0;
+        ioctl(fd, WR_L_DISPLAY);
+        write(fd, &data, sizeof(data));
+
+        sleep(1);
+
+        data = 0xFFFFFFFF;
+        ioctl(fd, WR_L_DISPLAY);
+        write(fd, &data, sizeof(data));
+
+        data = 0x0;
+        ioctl(fd, WR_R_DISPLAY);
+        write(fd, &data, sizeof(data));
+
+        sleep(1);
+
+        data = 0xFFFFFFFF;
+        ioctl(fd, WR_R_DISPLAY);
+        write(fd, &data, sizeof(data));
+    }
+    return false;
+}
+
 int main(int argc, char **argv)
 {
     int fd;
@@ -25,6 +98,14 @@ int main(int argc, char **argv)
 
     InitWindow(800, 600, "PokeCIn");
     SetTargetFPS(60);
+
+    if (!waitUser(fd))
+    {
+        CloseWindow();
+        if (fd >= 0)
+            close(fd);
+        return 0;
+    }
 
     InitGame(fd);
 
