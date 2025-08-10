@@ -17,11 +17,6 @@ bool waitUser(int fd)
         DrawText("Press ENTER to start", 200, 300, 20, WHITE);
         EndDrawing();
 
-        unsigned long int data = 0x0; // LOW ON / HIGH OFF
-
-        ioctl(fd, WR_L_DISPLAY);
-        write(fd, &data, sizeof(data));
-
         int key = 0;
         ioctl(fd, RD_SWITCHES);
         read(fd, &key, 1); // 1 byte -> 8 bits -> 8 switches
