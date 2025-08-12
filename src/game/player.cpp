@@ -1,8 +1,9 @@
 #include "player.h"
 #include "map.h"
 #include "raylib.h"
-#include "./include/ioctl_cmds.h"
+#include "../include/ioctl_cmds.h"
 #include <unistd.h>
+#include <sys/ioctl.h>
 
 static Vector2 pos = {100, 100};
 
@@ -15,21 +16,21 @@ static Sound stepSound;
 
 void InitPlayer()
 {
-    defaultUp = LoadTexture("assets/sprites/player/defaultUp.png");
-    defaultDown = LoadTexture("assets/sprites/player/defaultDown.png");
-    defaultLeft = LoadTexture("assets/sprites/player/defaultLeft.png");
-    defaultRight = LoadTexture("assets/sprites/player/defaultRight.png");
+    defaultUp = LoadTexture("../../src/assets/sprites/player/defaultUp.png");
+    defaultDown = LoadTexture("../../src/assets/sprites/player/defaultDown.png");
+    defaultLeft = LoadTexture("../../src/assets/sprites/player/defaultLeft.png");
+    defaultRight = LoadTexture("../../src/assets/sprites/player/defaultRight.png");
 
-    texUp = LoadTexture("assets/sprites/player/movUp.png");
-    textUp2 = LoadTexture("assets/sprites/player/movUp2.png");
-    texDown = LoadTexture("assets/sprites/player/movDown.png");
-    textDown2 = LoadTexture("assets/sprites/player/movDown2.png");
-    texLeft = LoadTexture("assets/sprites/player/movLeft.png");
-    textLeft2 = LoadTexture("assets/sprites/player/movLeft2.png");
-    texRight = LoadTexture("assets/sprites/player/movRight.png");
-    texRight2 = LoadTexture("assets/sprites/player/movRight2.png");
+    texUp = LoadTexture("../../src/assets/sprites/player/movUp.png");
+    texUp2 = LoadTexture("../../src/assets/sprites/player/movUp2.png");
+    texDown = LoadTexture("../../src/assets/sprites/player/movDown.png");
+    texDown2 = LoadTexture("../../src/assets/sprites/player/movDown2.png");
+    texLeft = LoadTexture("../../src/assets/sprites/player/movLeft.png");
+    texLeft2 = LoadTexture("../../src/assets/sprites/player/movLeft2.png");
+    texRight = LoadTexture("../../src/assets/sprites/player/movRight.png");
+    texRight2 = LoadTexture("../../src/assets/sprites/player/movRight2.png");
 
-    stepSound = LoadSound("assets/sounds/step.wav");
+    stepSound = LoadSound("../../src/assets/sounds/step.wav");
 }
 
 void UpdatePlayer(int fd)

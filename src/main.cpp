@@ -6,6 +6,7 @@
 #include <sys/ioctl.h>
 #include <errno.h>
 #include "ioctl_cmds.h"
+#include <stdio.h>
 
 bool waitUser(int fd)
 {
