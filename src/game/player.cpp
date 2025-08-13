@@ -33,10 +33,14 @@ void InitPlayer()
     stepSound = LoadSound("../../src/assets/sounds/step.wav");
 }
 
+static int currentFrame = 0;
+static float frameTimer = 0.0f;
+static const float frameSpeed = 0.2f;
+
 void UpdatePlayer(int fd)
 {
     Vector2 oldPos = pos;
-    int key = -1;
+    int key = 0;
     ioctl(fd, RD_PBUTTONS);
     read(fd, &key, 1);
 
@@ -67,63 +71,74 @@ void UpdatePlayer(int fd)
         isMoving = true;
     }
 
-    if (IsCollisionTile(pos))
+    /*if (IsCollisionTile(pos))
     {
         pos = oldPos;
         isMoving = false;
-    }
+    }*/
     else if (isMoving)
     {
         PlaySound(stepSound);
+
+        frameTimer += GetFrameTime();
+
+        if (frameTimer >= frameSpeed)
+        {
+            currentFrame = (currentFrame + 1) % 2;
+            frameTimer = 0.0f;
+        }
+        else
+        {
+            currentFrame = 0;
+            frameTimer = 0.0f;
+        }
     }
 }
 
 void DrawPlayer()
 {
+    Vector2 position = {pos.x, pos.y};
+    float scale = 0.25f;
     switch (lastMove)
     {
     case 'w':
         if (isMoving)
         {
-            DrawTexture(texUp, pos.x, pos.y, WHITE);
-            DrawTexture(texUp2, pos.x, pos.y, WHITE);
+            DrawTextureEx((currentFrame == 0) ? texUp : texUp2, position, 0.0f, scale, WHITE);
         }
         else
         {
-            DrawTexture(defaultUp, pos.x, pos.y, WHITE);
+            DrawTextureEx(defaultUp, position, 0.0f, scale, WHITE);
         }
         break;
     case 'a':
         if (isMoving)
         {
-            DrawTexture(texLeft, pos.x, pos.y, WHITE);
-            DrawTexture(texLeft2, pos.x, pos.y, WHITE);
+            DrawTextureEx((currentFrame == 0) ? texLeft : texLeft2, position, 0.0f, scale, WHITE);
         }
         else
         {
-            DrawTexture(defaultLeft, pos.x, pos.y, WHITE);
+            DrawTextureEx(defaultLeft, position, 0.0f, scale, WHITE);
         }
         break;
     case 's':
         if (isMoving)
         {
-            DrawTexture(texDown, pos.x, pos.y, WHITE);
-            DrawTexture(texDown2, pos.x, pos.y, WHITE);
+            DrawTextureEx((currentFrame == 0) ? texDown : texDown2, position, 0.0f, scale, WHITE);
         }
         else
         {
-            DrawTexture(defaultDown, pos.x, pos.y, WHITE);
+            DrawTextureEx(defaultDown, position, 0.0f, scale, WHITE);
         }
         break;
     case 'd':
         if (isMoving)
         {
-            DrawTexture(texRight, pos.x, pos.y, WHITE);
-            DrawTexture(texRight2, pos.x, pos.y, WHITE);
+            DrawTextureEx((currentFrame == 0) ? texRight : texRight2, position, 0.0f, scale, WHITE);
         }
         else
         {
-            DrawTexture(defaultRight, pos.x, pos.y, WHITE);
+            DrawTextureEx(defaultRight, position, 0.0f, scale, WHITE);
         }
         break;
     }

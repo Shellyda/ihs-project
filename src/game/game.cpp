@@ -21,13 +21,13 @@ void UpdateGame(int fd)
     UpdateMusicStream(music);
     UpdatePlayer(fd);
 
-    if (CheckGrassTrigger())
+/*    if (CheckGrassTrigger())
     {
         inBattle = 1;
         StopMusicStream(music);
         music = LoadMusicStream("../../src/assets/sounds/battle.mp3");
         PlayMusicStream(music);
-    }
+    }*/
 }
 
 void DrawGame()

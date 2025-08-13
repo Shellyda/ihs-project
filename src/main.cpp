@@ -17,8 +17,12 @@ bool waitUser(int fd)
         DrawText("PokeCIn", 300, 200, 40, WHITE);
         DrawText("Press ENTER to start", 200, 300, 20, WHITE);
         EndDrawing();
-
-        int key = 0;
+		int key = 0;
+		unsigned int buttonRead = 0;
+		ioctl(fd, RD_PBUTTONS);
+		read(fd, &buttonRead, 1);
+        printf("New data (HOW MANY BUTTONS ARE PRESSED) -> %u\n", buttonRead);
+        
         ioctl(fd, RD_SWITCHES);
         read(fd, &key, 1); // 1 byte -> 8 bits -> 8 switches
 

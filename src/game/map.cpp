@@ -9,7 +9,7 @@ static Image collisionMask, grassMask;
 void InitMap()
 {
     const char *mapPath = "../../src/assets/map.png";
-    const char *collisionPath = "../../src/assets/tiles/collision_mask.png";
+    const char *collisionPath = "../../src/assets/tiles/collision_mask_fake.png";
     const char *grassPath = "../../src/assets/tiles/grass.png";
 
     if (FileExists(mapPath))
