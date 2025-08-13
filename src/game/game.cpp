@@ -6,6 +6,8 @@
 static Music music;
 static int inBattle = 0;
 
+static Camera2D camera;
+
 void InitGame(int fd)
 {
     InitAudioDevice();
@@ -14,6 +16,11 @@ void InitGame(int fd)
 
     music = LoadMusicStream("../../src/assets/sounds/overworld.mp3");
     PlayMusicStream(music);
+
+    camera.target = GetPlayerPosition(); 
+    camera.offset = (Vector2){ GetScreenWidth()/2, GetScreenHeight()/2 }; 
+    camera.rotation = 0.0f;
+    camera.zoom = 1.0f;
 }
 
 void UpdateGame(int fd)
@@ -21,7 +28,9 @@ void UpdateGame(int fd)
     UpdateMusicStream(music);
     UpdatePlayer(fd);
 
-/*    if (CheckGrassTrigger())
+    camera.target = GetPlayerPosition();
+
+    /*if (CheckGrassTrigger())
     {
         inBattle = 1;
         StopMusicStream(music);
@@ -35,8 +44,10 @@ void DrawGame()
     BeginDrawing();
     ClearBackground(RAYWHITE);
 
+    BeginMode2D(camera); 
     DrawMap();
     DrawPlayer();
+    EndMode2D();
 
     if (inBattle)
     {

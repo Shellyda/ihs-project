@@ -76,6 +76,7 @@ void UpdatePlayer(int fd)
         pos = oldPos;
         isMoving = false;
     }*/
+   
     else if (isMoving)
     {
         PlaySound(stepSound);
@@ -87,11 +88,11 @@ void UpdatePlayer(int fd)
             currentFrame = (currentFrame + 1) % 2;
             frameTimer = 0.0f;
         }
-        else
-        {
-            currentFrame = 0;
-            frameTimer = 0.0f;
-        }
+    } 
+    else
+    {
+        currentFrame = 0;
+        frameTimer = 0.0f;
     }
 }
 
@@ -99,6 +100,7 @@ void DrawPlayer()
 {
     Vector2 position = {pos.x, pos.y};
     float scale = 0.25f;
+
     switch (lastMove)
     {
     case 'w':
