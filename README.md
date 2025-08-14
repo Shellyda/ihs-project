@@ -1,5 +1,5 @@
 # PokeCIn - Infrastructure hardware-software Course project
-This repository contains the structure, scripts, and documentation to develop the **IF817 course project** — a C++ game running on the **DE2i-150 FPGA board**, integrating FPGA peripherals through a custom PCI character driver.
+This repository contains the structure, scripts, and documentation to develop the **IF817 course project** - a C++ game Pokémon like for the DE2i-150 FPGA board, integrating hardware-mapped peripherals (switches, buttons, LEDs, and 7-segment displays) via a custom PCI character driver. The project uses Quartus II for FPGA mapping, Raylib for rendering via HDMI, and real-time interaction through the board’s I/O components.
 
 | Gameplay |  FPGA DE2i-150  |
 |--------------------------------|------------------|
@@ -18,7 +18,6 @@ The project is divided into four main stages, as specified in the course require
 ## Content
 
 ### Game Overview – PokeCIn
-
 - Lightweight adventure game inspired by the classic Pokémon series, adapted to run on the **DE2i-150 FPGA board**.
 The game features:
 
