@@ -5,7 +5,6 @@ This repository contains the structure, scripts, and documentation to develop th
 |--------------------------------|------------------|
 | <img src="https://github.com/user-attachments/assets/2aa637e0-b757-4ccb-959d-1b2f771c2101" width="400"> | <img src="https://github.com/user-attachments/assets/ed2309d3-5dc9-4cba-8f10-6994ca743b21" width="400"> |
 
-
 The project is divided into four main stages, as specified in the course requirements:
 
 1. **Peripheral Mapping** – All DE2i-150 peripherals (switches, buttons, LEDs, and 7-segment displays) are mapped in Quartus II for PCI read/write access.
@@ -14,6 +13,14 @@ The project is divided into four main stages, as specified in the course require
 4. **Optional Enhancements** – Possible additions include sound interaction, OpenMP parallelization, or C/Assembly integration for performance boosts.
 
 **Reminder**: This layout includes a simple Makefile for those who want to develop a straightforward C/C++/Assembly project without complex configuration. **Do not remove the Makefile inside the `driver` folder**, as it is essential for building the driver/module.
+
+## Contributors
+<table>
+  <tr>
+   <td align="center"><a href="https://github.com/alyssonramos"><img src="https://avatars.githubusercontent.com/u/84824614?v=4" width="100px;" alt=""/><br /><sub><b>Alysson Ramos</b></sub></a><br/></td>
+   <td align="center"><a href="https://github.com/LucasTorres96"><img src="https://avatars.githubusercontent.com/u/84953349?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Torres</b></sub></a><br/></td>
+   <td align="center"><a href="https://github.com/Shellyda"><img src="https://avatars.githubusercontent.com/u/69990297?v=4" width="100px;" alt=""/><br /><sub><b>Shellyda Barbosa</b></sub></a><br/></td>
+</table>
 
 ## Content
 
@@ -62,7 +69,7 @@ Players can explore a pixel-art map, control their character in real time, and i
 ├── README.md
 └── setup.sh
 ```
-
+ 
 ## How to Run & Debug
 
 ### Using `setup.sh`
