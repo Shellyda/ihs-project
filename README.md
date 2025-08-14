@@ -17,9 +17,7 @@ The project is divided into four main stages, as specified in the course require
 
 ## Content
 
-### Game Overview – PokeCIn
-- Lightweight adventure game inspired by the classic Pokémon series, adapted to run on the **DE2i-150 FPGA board**.
-The game features:
+### Game Overview 
 
 * **Raylib-based rendering** via HDMI for smooth 2D graphics.
 * **Real hardware interaction** using switches, buttons, and LEDs on the FPGA.
