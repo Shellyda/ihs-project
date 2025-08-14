@@ -11,3 +11,7 @@ __pycache__/
 *.mod
 *.o
 *.order
+
+*.cpp.swo
+*.cpp.swn
+*.cpp.swm
